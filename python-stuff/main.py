@@ -2,7 +2,7 @@ import telebot
 import os
 import random
 
-bot = telebot.TeleBot("8554417503:AAHoWt45gn1KVhW7M53DmKsZnxX1LuJGfzM")
+bot = telebot.TeleBot(TOKEN)
     
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -44,3 +44,4 @@ def mem(message):
         bot.send_photo(message.chat.id, f)   
 
 bot.polling()
+
